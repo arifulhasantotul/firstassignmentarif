@@ -154,7 +154,7 @@ html{
     margin-right:1rem;
     border-radius: 50%;
     background: var(--dark);
-    transition: all 0.5s ease0;
+    transition: all 0.5s ease;
 }
 .section .sec_up .contact  a:hover {
     background: var(--primary);
