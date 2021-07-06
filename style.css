@@ -257,8 +257,12 @@ html{
     color: var(--dark);
     cursor: pointer;
     font-weight: 600;
+    box-shadow: -1px 3px 21px 3px;
+    transition: all 0.3s ease;
 }
-
+.login_form button:hover {
+    transform: scale(1.1);
+}
 /* start footer */
 .footer {
     background: linear-gradient(to right, rgb(195, 20, 50), rgb(36, 11, 54));
