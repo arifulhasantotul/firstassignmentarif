@@ -17,6 +17,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 .main {
     background: var(--body);
@@ -163,16 +164,19 @@ html{
     height: 2rem;
     margin: 0.5rem;
 }
+.section .recipe{
+    margin-top: 4rem;
+    margin-left: -7%;
+}
 .section .recipe h2 {
     font-size: 3rem;
     text-align: center;
-    padding-left: 16rem;
 }
 .section .recipe .item {
     display: flex;
     align-items: center;
     width: 60%;
-    margin: 2rem auto;
+    margin: 2rem 14.5%;
 } 
 .item .rec {
     background: var(--pure);
@@ -180,6 +184,10 @@ html{
     margin: 2rem;
     border-radius: 1.6rem;
     box-shadow: -1px 3px 21px 3px;
+    transition: all 0.5s ease;
+}
+.item .rec:hover {
+    transform: scale(1.1);
 }
 .item .rec img{
     width: 20rem;
@@ -194,6 +202,62 @@ html{
     text-align: center;
 }
 .item .rec p{
-    //font-size: 1.1rem;
-
+    color: var(--dark);
+}
+.recipe .popularity{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 3px 21px 3px;
+    margin: 4rem 30%;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+}
+.recipe .popularity:hover {
+    transform: scale(1.1);
+}
+.recipe .popularity h1, h4 {
+    text-align: center;
+    color: var(--dark);
+    padding: 0.2rem 2rem;
+}   
+.login_form {
+    display: grid;
+    justify-content: center;
+    
+}
+.login_form h2 {
+    color: var(--dark)
+}
+.login_form form .center_form{
+    
+}
+.login_form input {
+    background: var(--dark);
+    border: 1px solid transparent;
+    padding: 1rem 5rem;
+    margin: 1rem;
+    border-radius: 3rem;
+    color: var(--light);
+}
+.login_form input::placeholder{
+    color: var(--light);
+}
+.login_form .center_form label {
+    color: var(--dark);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+.login_form button{
+    padding: 1rem 3rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: 3rem;
+    background: #22eaaa;
+    color: var(--dark);
+    cursor: pointer;
+    font-weight: 600;
+}
+.login_form button .red{
+    background-color: ;
 }
